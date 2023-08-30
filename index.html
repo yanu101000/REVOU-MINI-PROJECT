@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=".\css\style.css">
+  <title>Yanu Portfolio - Home</title>
+</head>
+
+<body>
+  <div class="welcome-name">
+    <div class="inputname-container">
+    <form id="field-name">
+      <label for="name">Nama:</label>
+      <input type="text" id="welcomename" name="welcomename" placeholder="Masukkan nama Anda" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  </div>
+  <div class="welcome-page" style="display: none;">
+    <!-- Header & Menu -->
+    <header>
+      <img class="logo" src=".\img\logo-revou.png" alt="logo-revou">
+      <div class="menu">
+        <a class="active" href="index.html">Home</a>
+        <a href="ourprofile.html">Our Profile</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Message Us</a>
+      </div>
+    </header>
+    <!-- Isi Utama Halaman -->
+    <main>
+      <!-- Slideshow -->
+      <div class="slideshow-container">
+        <h2>Hi <span id="output-welcomename"></span>, Welcome To Website</h2>
+        <p style="font-size: 18px;">Ini adalah website latihan pertama</p>
+        <div class="mySlides fade">
+          <img src=".\img\slide1.jpg">
+        </div>
+  
+        <div class="mySlides fade">
+          <img src=".\img\slide2.jpg">
+        </div>
+  
+        <div class="mySlides fade">
+          <img src=".\img\slide3.jpg">
+        </div>
+        <br>
+  
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <br>
+      </div>
+  
+      <!-- Our Facilitation -->
+      <div class="facilitation-container">
+        <h2>Our Facilitation</h2>
+        <div class="row">
+          <div class="column">
+            <div class="image-container">
+              <img src=".\img\classroom.jpg" alt="Image 1" class="rounded-image">
+              <div class="image-caption">
+                <h3>Classroom</h3>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="image-container">
+              <img src=".\img\computer-lab.jpg" alt="Image 2" class="rounded-image">
+              <div class="image-caption">
+                <h3>Computer Lab</h3>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="image-container">
+              <img src=".\img\library.jpg" alt="Image 3" class="rounded-image">
+              <div class="image-caption">
+                <h3>Library</h3>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="image-container">
+              <img src=".\img\cafe.jpg" alt="Image 4" class="rounded-image">
+              <div class="image-caption">
+                <h3>Cafe</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Contact Us -->
+      <div class="contactus-container">
+        <h2>Message Us</h2>
+        <div class="row">
+          <div class="column-form">
+            <form id="data-form">
+              <label for="nama">Nama :</label>
+              <input type="text" id="nama" name="nama"><br><br>
+  
+              <label for="tanggal_lahir">Tanggal Lahir :</label>
+              <input type="date" id="tanggal_lahir" name="tanggal_lahir"><br><br>
+  
+              <label>Jenis Kelamin :</label>
+              <input type="radio" id="laki" name="jenis_kelamin" value="laki">
+              <label for="laki">Laki-laki</label>
+              <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+              <label for="perempuan">Perempuan</label><br><br>
+  
+              <label for="pesan">Pesan :</label><br>
+              <textarea class="width-form" id="pesan" name="pesan" rows="4" cols="50"></textarea><br><br>
+  
+              <input class="width-form" type="submit" value="Submit">
+            </form>
+          </div>
+          <div class="column-form">
+            <div class="output-box">
+              <p><strong>Current time:</strong> <span id="output-datetime"></span></p>
+              <br>
+              <p><strong>Nama:</strong> <span id="output-nama"></span></p>
+              <p><strong>Tanggal Lahir:</strong> <span id="output-tanggal_lahir"></span></p>
+              <p><strong>Jenis Kelamin:</strong> <span id="output-jenis_kelamin"></span></p>
+              <p><strong>Pesan:</strong> <span id="output-pesan"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p><b>Created By Yanu &copy; 2023</b></p>
+    </footer>
+  </div>
+  <script src=".\js\script.js"></script>
+</body>
+
+</html>

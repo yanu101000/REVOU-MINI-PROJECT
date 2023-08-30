@@ -1,0 +1,52 @@
+body .welcome-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    font-size: 30px;
+}
+
+.welcome-name .inputname-container {
+    border-radius: 8px;
+}
+
+.welcome-name .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-name label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.welcome-name input {
+    padding: 1%;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.welcome-name button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+@media (max-width: 600px) {
+    .inputname-container {
+        max-width: 90%;
+    }
+
+    button {
+        align-items: center;
+        width: 100%;
+    }
+
+}
